@@ -1,0 +1,15 @@
+{
+    "name": "jabranr/app-framework",
+    "description": "App Framework",
+    "require": {
+        "mobiledetect/mobiledetectlib": "*"
+    },
+    "license": "Proprietary",
+    "authors": [
+        {
+            "name": "Jabran Rafique",
+            "email": "hello@jabran.me"
+        }
+    ],
+    "minimum-stability": "stable"
+}

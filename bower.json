@@ -1,0 +1,26 @@
+{
+  "name": "app-framework",
+  "version": "4.0.0",
+  "homepage": "https://bitbucket.org/jabranr/app-framework",
+  "authors": [
+    "Jabran Rafique <hello@jabran.me>"
+  ],
+  "license": "Proprietary",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "1.9.1",
+    "bootstrap-sass-official": "~3.3.1",
+    "socialmedia": "~1.6.4",
+    "respond": "~1.4.2",
+    "placeholder-fallback": "~1.0.1",
+    "fontawesome": "~4.2.0",
+    "html5shiv": "~3.7.2"
+  }
+}
