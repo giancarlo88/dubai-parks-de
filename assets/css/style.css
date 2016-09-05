@@ -167,7 +167,10 @@ video {
       font-size: 15px; } }
 
 .reg__step-1-img {
-  margin-bottom: -22px; }
+  margin-bottom: -25px; }
+
+.reg__step-2-img {
+  margin-top: 10px; }
 
 .reg__step-1-img, .reg__step-2-img {
   float: left;
@@ -192,6 +195,9 @@ video {
 .reg__form-container {
   text-align: center;
   margin: 0 auto; }
+
+form {
+  padding: 5px; }
 
 .reg__form, .button, .reg__mystery-number-form {
   font-family: "klavika-regular", Helvetica, sans-serif;
@@ -312,7 +318,8 @@ input[type=text]:focus {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #ff005c; }
 
 .reg__container-tc-priv {
-  position: absolute; }
+  position: relative;
+  padding-bottom: 10px; }
 
 .scr__scratch-container {
   position: absolute;
@@ -408,7 +415,7 @@ input[type=text]:focus {
 #js-canvas1 {
   position: absolute;
   z-index: 1;
-  top: 12.6%;
+  top: 12.7%;
   left: 18.5%;
   transform: rotate(0deg); }
 
@@ -443,7 +450,7 @@ input[type=text]:focus {
 #js-canvas6 {
   position: absolute;
   z-index: 1;
-  top: 41.5%;
+  top: 43%;
   left: 7.5%;
   transform: rotate(0deg); }
 

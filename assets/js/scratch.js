@@ -1,5 +1,8 @@
 // canvasWidth = document.getElementById("js-container").style.width*0.3,
 // canvasHeight = document.getElementById("js-container").style.height*0.3,
+var ua = navigator.userAgent.toLowerCase();
+var isAndroid = ua.indexOf("android") > -1;
+
 var scrollY = function (y) {
     if (window.jQuery) {
         FB.Canvas.getPageInfo (function (pageInfo) {
@@ -67,9 +70,12 @@ function scratchPad(canvasid, canvasWidth, canvasHeight, pixelThreshold) {
   // but might lead to inaccuracy
   function getFilledInPixels(stride) {
     if (!stride || stride < 1) { stride = 1; }
-    
-    var pixels   = ctx.getImageData(0, 0, canvasWidth, canvasHeight),
-        pdata    = pixels.data,
+     if (isAndroid) {
+      var pixels = ctx.getImageData(0, 0, 200, 200)
+    } else {
+      var pixels   = ctx.getImageData(0, 0, canvasWidth, canvasHeight)
+    }
+      var pdata    = pixels.data,
         l        = pdata.length,
         total    = (l / stride),
         count    = 0;
@@ -113,10 +119,12 @@ function scratchPad(canvasid, canvasWidth, canvasHeight, pixelThreshold) {
   }
 
   function handleMouseMove(e) {
+   if (!isAndroid) {
     if (!isDrawing) { return; }
-    
+    }
     e.preventDefault();
 
+    
     var currentPoint = getMouse(e, canvas),
         dist = distanceBetween(lastPoint, currentPoint),
         angle = angleBetween(lastPoint, currentPoint),

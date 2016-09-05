@@ -242,14 +242,19 @@ video {
 }
 
 .reg__step-1-img {
-  margin-bottom: -22px;
+  margin-bottom: -25px;
 }
 
+.reg__step-2-img {
+  margin-top: 10px;
+}
 
 .reg__step-1-img, .reg__step-2-img {
   float: left;
   width: 100%;
 }
+
+
 
 .reg__step-1, .reg__step-2 {
 float: left;
@@ -290,6 +295,10 @@ float: left;
   // @media (max-width: 850px) {
   //   width: 90%;
   // }
+}
+
+form {
+  padding: 5px;
 }
 
 .reg__form {
@@ -423,7 +432,8 @@ input[type=text]:focus {
 
 .reg__container-tc-priv {
   @extend .tab__container-tc-priv;
-  position: absolute;
+  position: relative;
+  padding-bottom: 10px;
 }
 
 //Scratch page elements 
@@ -540,7 +550,7 @@ width: 100%;
 }
 
 
-$heights: 12.6%, 12%, 43%, 61%, 59%, 41.5%;
+$heights: 12.7%, 12%, 43%, 61%, 59%, 43%;
 $lengths: 18.5%, 51%, 67%, 52%, 25%, 7.5%;
 $rotations: 0deg, 0deg, 0deg, 0deg, 20deg, 0deg;
 

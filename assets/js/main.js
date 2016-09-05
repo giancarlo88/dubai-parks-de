@@ -24,7 +24,6 @@ self.location.href = "http://www.dubaiparksandresorts.com"
 })
 
 var scrollY = function (y) {
-    console.log(y)
 	if (window.jQuery) {
         FB.Canvas.getPageInfo (function (pageInfo) {
             $({ y: pageInfo.scrollTop })
@@ -35,6 +34,7 @@ var scrollY = function (y) {
                         duration: 1000,
                         step: function (offset) {
                             FB.Canvas.scrollTo(0, offset);
+							
                     }
                 });
         });
@@ -471,7 +471,8 @@ var mnTries = 0;
 
 		if ( ! getStartedBtn.length ) return;
 
-		getStartedBtn.on('click', function(e)	{
+	$(document).on('click', '.tab__fb-login, .hd__register', function(e){
+
 			var $this = $(this);
 
 			if ( response && response.status === 'connected' ) {
