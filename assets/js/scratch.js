@@ -1,8 +1,11 @@
-// canvasWidth = document.getElementById("js-container").style.width*0.3,
-// canvasHeight = document.getElementById("js-container").style.height*0.3,
+var canvasWidth, canvasHeight;
 var ua = navigator.userAgent.toLowerCase();
 var isAndroid = ua.indexOf("android") > -1;
 
+//Prevent screen from scrolling when scratching on mobile devices
+$(".s-wrapper").bind("touchmove",function(e) {e.preventDefault()}); 
+
+//Scroll to top of page if on Facebook Tab.
 var scrollY = function (y) {
     if (window.jQuery) {
         FB.Canvas.getPageInfo (function (pageInfo) {
@@ -201,7 +204,6 @@ window.onload = function() {
 }
 
 function sizeScratchpad () {
-  
   //Resizes the six scratchpad surfaces based on their 
   //proporitions to the actual image background. 
   //(The image is normally 800 px)

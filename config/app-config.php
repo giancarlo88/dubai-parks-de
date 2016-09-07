@@ -135,13 +135,13 @@ AppConfig::set( array(
 		/**
 		 * Facebook invite message
 		 */
-		'facebook_invite_message' => 'I’ve cracked the code to amazing! Try yourself for a chance to WIN! http://united-agency-server.co.uk/thomascook/dubai_parks_gt/tab.php',
+		'facebook_invite_message' => 'I’ve cracked the code to amazing! Try yourself for a chance to WIN! unitedapps.co/tickettoamazing-de',
 
 
 		/**
 		 * Facebook share message
 		 */
-		'facebook_share_message' => 'Ich habe den Code für etwas Erstaunliches entschlüsselt. Hier teilnehmen um zu gewinnen > http://united-agency-server.co.uk/thomascook/dubai_parks_tta_de/tab.php'
+		'facebook_share_message' => 'Ich habe den Code für etwas Erstaunliches entschlüsselt. Hier teilnehmen um zu gewinnen > unitedapps.co/tickettoamazing-de'
 	)
 );
 
@@ -161,7 +161,7 @@ AppConfig::set( array(
 		/**
 		 * Client's Twitter handle WITHOUT '@' i.e. ThomasCookUK
 		 */
-		'twitter_handle' => 'ThomasCookUK',
+		'twitter_handle' => 'ThomasCook_DE',
 
 
 		/**

@@ -6,6 +6,8 @@ $thisPage = "tab";
 
 require './config.php';
 require './template/header.php';
+require './vendor/mobiledetect/mobiledetectlib/Mobile_Detect.php';
+$detect = new Mobile_Detect;
 
 
 // require './template/navigation.php';
@@ -26,10 +28,14 @@ else {
 <div class="app-wrapper">
 	<div>
 		<div class = "tab__inner">
-			<video playsinline autoplay muted loop class = "bgvid">
-				<source src = "assets/videos/dubai_parks.mp4">
-			</video>
-	
+			<?php
+			if ($detect->isMobile()) {
+			echo '<div class = "tab__mobile-bg"><br></div>';}
+			// echo '<img class = "tab__mobile-bg" src = "./assets/images/bg_ring.jpg">';}
+
+			else {
+			echo '<video playsinline autoplay muted loop class = "bgvid"><source src = "assets/videos/dubai_parks.mp4"></video>';} 
+			?>
 			<div class="container tab__overlay">
 			<!--<div class="logo clearfix">
 				<img src="./assets/images/dubai-logo-white.png" />

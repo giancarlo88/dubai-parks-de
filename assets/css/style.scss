@@ -165,9 +165,10 @@ ul {
     top: 50px;
     width: 100%;
     font-size: 20px;
-    height: 250px;
+    height: 275px;
     color: #FFF;  
     background-color: rgba(50, 50, 50, 0.5);
+    padding: 20px 0;
     h2 {
       font-family: $fonts;
       font-weight: 100;
@@ -193,6 +194,15 @@ ul {
 .tab__byline {
   font-family: $bold-fonts;
 }
+
+.tab__mobile-bg {
+  min-height: 500px;
+  min-width: 200px;
+  background: url("../images/movie_poster.gif") no-repeat center;
+  background-size: 100%;
+  background-position: top;   
+}
+
 
 video {
     width: 100%;
@@ -357,6 +367,8 @@ form {
   min-width: 100px;
   color: #eee;
   cursor: pointer;
+  -webkit-appearance: button;
+  text-align: center;
 }
 
 .reg__checkbox-container {
@@ -433,7 +445,7 @@ input[type=text]:focus {
 .reg__container-tc-priv {
   @extend .tab__container-tc-priv;
   position: relative;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 
 //Scratch page elements 
@@ -600,7 +612,7 @@ $rotations: 0deg, 0deg, 0deg, 0deg, 20deg, 0deg;
   margin: 10px;
 }
 
-.container-tc-priv {
+.ty__container-tc-priv {
   margin: 10px 0;
   width: 100%;
   bottom: 0;

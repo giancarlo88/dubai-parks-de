@@ -28,11 +28,9 @@ a {
 }
 
 
-
 .bolded {
   font-family: $bold-fonts;
 }
-
 
 .button{
   @extend .reg__form;
@@ -59,15 +57,6 @@ li {
   margin-left: 10px;
 }
 
-.tab__container-tc-priv {
-  width: 100%;
-  bottom: 0;
-  font-size: 14px;
-  position: fixed;
- 
-}
-
-
 .privacy {
   float: right;
   padding-right: 10px;
@@ -76,7 +65,6 @@ li {
     width: 100%;
     height: 100% !important;
 }
-
 
 body {
   font-family: $fonts;
@@ -156,6 +144,16 @@ ul {
 }
 
 //Tab page elements
+.tab__byline {
+  font-family: $bold-fonts;
+}
+
+.tab__container-tc-priv {
+  width: 100%;
+  bottom: 0;
+  font-size: 14px;
+  position: fixed;
+}
 
 .tab__overlay {
     text-align: center;
@@ -189,19 +187,12 @@ ul {
   width: 250px; 
 }
 
-.tab__byline {
-  font-family: $bold-fonts;
-}
-
 video {
     width: 100%;
     display: block;
-    background: url("../images/background.jpg") no-repeat center;
-
 }
 
 //Registration page elements
-
 .reg__registration {
   margin: 0 auto;
   width: 40%;
@@ -216,17 +207,10 @@ video {
     padding-top: 5%;
     min-height: 0;
   }
-
   @media (max-width: 360px) {
     width: 100%;
   }
-
 }
-
-// .register {
-//   color: #fff;
-//   font-size: 20px; 
-// }
 
 .reg__instructions {
   width: 80%;
@@ -236,14 +220,11 @@ video {
   width: 100%;
   font-size: 15px;
   }
- 
-
 }
 
 .reg__step-1-img {
   margin-bottom: -22px;
 }
-
 
 .reg__step-1-img, .reg__step-2-img {
   float: left;
@@ -254,12 +235,6 @@ video {
 float: left;
 }
 
-// .step2  {
-//   position: relative;
-//   left: 20px;
-//   top: 10px;
-// }
-
 .reg__steps-container {
   img {
     vertical-align: top;
@@ -268,7 +243,6 @@ float: left;
   }
   p {
     margin: -15px 0;
-  
   }
 }
 
@@ -278,17 +252,9 @@ float: left;
   display: none;
 }
 
-// .step1text {
-//   position: relative;
-//   left: -50px;
-// }
-
 .reg__form-container {
   text-align: center;
   margin: 0 auto;
-  // @media (max-width: 850px) {
-  //   width: 90%;
-  // }
 }
 
 .reg__form {
@@ -356,12 +322,10 @@ float: left;
   word-spacing: -1px;
 }
 
-
 .reg__btn-container { 
   margin: 0 auto;
   text-align: center;
-  width: 50%;
-  
+  width: 50%;  
 }
 
 .reg__checkbox {
@@ -398,7 +362,6 @@ float: left;
 text-align: center;
 }
 
-
 .reg__mystery-numbers {
   text-align: center;
   width: 100%;
@@ -426,7 +389,6 @@ input[type=text]:focus {
 }
 
 //Scratch page elements 
-
 .scr__scratch-container {
   position: absolute;
   left: 0;
@@ -440,10 +402,6 @@ input[type=text]:focus {
   margin: 0 auto;
   width: 50%;
   min-width: 300px;
-  /*background: url("../../play_bg_underlay.png") no-repeat;
-  *background-size: 80%;
-  background-position: center center;
-*/
 }
 
 .scr__mg-logo {
@@ -532,7 +490,6 @@ width: 100%;
     padding-bottom: 0;
 }
 
-
 $heights: 12.6%, 12%, 43%, 61%, 59%, 41.5%;
 $lengths: 18.5%, 51%, 67%, 52%, 25%, 7.5%;
 $rotations: 0deg, 0deg, 0deg, 0deg, 20deg, 0deg;
@@ -550,7 +507,6 @@ $rotations: 0deg, 0deg, 0deg, 0deg, 20deg, 0deg;
 }
 
 //Thank-you page elements 
-
 .ty__bg-wrapper { 
   background: url("../images/bg_congratulations.jpg") no-repeat;
   background-position: center;
